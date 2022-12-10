@@ -49,8 +49,8 @@ config :logger, level: :info
 # Check `Plug.SSL` for all available options in `force_ssl`.
 
 config :exq,
-  mode: :api
+  mode: :api,
   name: Exq,
   host: System.get_env("REDIS_HOST") || "localhost",
   port: System.get_env("REDIS_PORT") || 6379,
-  password: System.get_env("REDIS_PASSWD") || nil,
+  password: System.get_env("REDIS_PASSWD") || nil

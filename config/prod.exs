@@ -10,6 +10,7 @@ import Config
 # which you should run after static files are built and
 # before starting your production server.
 config :lei_exq_ui, LeiExqUiWeb.Endpoint, 
+  check_origin: true,
   server: true,
   cache_static_manifest: "priv/static/cache_manifest.json",
   url: [host: System.get_env("RENDER_EXTERNAL_HOSTNAME") || "localhost", port: 443]
